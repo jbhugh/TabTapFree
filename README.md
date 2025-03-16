@@ -57,10 +57,9 @@ Download it, sideload it, and strum away. Questions? Hit me up here or test it w
 *“Tabs at your fingertips—because life’s too short for bad covers.”*
 
 ## Screenshots
-![Listen Screen](https://github.com/jbhugh/SongTabFinderFree/releases/download/v1.0.1/listening.jpg)
-![Result Screen](https://github.com/jbhugh/SongTabFinderFree/releases/download/v1.0.1/found.jpg)
 ![Home Screen](https://github.com/jbhugh/SongTabFinderFree/releases/download/v1.0.1/Home.jpg)
-![UltimateGuitar](https://github.com/jbhugh/SongTabFinderFree/releases/download/v1.0.1/UGLink.jpg)
-![Songsterr](https://github.com/jbhugh/SongTabFinderFree/releases/download/v1.0.1/SongsterrLink.jpg)
-
+![Listening](https://github.com/jbhugh/SongTabFinderFree/releases/download/v1.0.1/Listening.jpg)
+![Song Found](https://github.com/jbhugh/SongTabFinderFree/releases/download/v1.0.1/Found.jpg)
+![Songsterr Link](https://github.com/jbhugh/SongTabFinderFree/releases/download/v1.0.1/SongsterrLink.jpg)
+![Ultimate Guitar Link](https://github.com/jbhugh/SongTabFinderFree/releases/download/v1.0.1/UGLink.jpg)
 
