@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TabTap</string>
+    <string-array name="tab_sources">
+        <item>Songsterr</item>
+        <item>UG</item>
+    </string-array>
+</resources>
