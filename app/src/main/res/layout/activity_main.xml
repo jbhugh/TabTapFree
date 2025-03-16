@@ -3,34 +3,39 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_gradient">
+    android:background="#212121">
 
+    <!-- Record Button - Centered, with "Listen" -->
     <Button
         android:id="@+id/record_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Listen"
-        android:textSize="16sp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:background="@drawable/button_3d_record"
+        android:backgroundTint="@null"
+        android:text="Listen"
         android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Clear Button - Bottom Right, with "Clear" -->
     <Button
         android:id="@+id/clear_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Clear"
-        android:textSize="14sp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
         android:background="@drawable/button_3d_clear"
-        android:textColor="#FFFFFF"
-        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@null"
+        android:text="Clear"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp" />
 
+    <!-- Status Text - Below Record Button -->
     <TextView
         android:id="@+id/status_text"
         android:layout_width="0dp"
@@ -44,42 +49,40 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="32dp" />
 
+    <!-- Songsterr Link - Below Status Text, Left -->
+    <Button
+        android:id="@+id/songsterr_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Songsterr"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/status_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ug_link"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Ultimate Guitar Link - Below Status Text, Right -->
+    <Button
+        android:id="@+id/ug_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ultimate Guitar"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/status_text"
+        app:layout_constraintStart_toEndOf="@id/songsterr_link"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp" />
+
+    <!-- Progress Bar - Below Links -->
     <ProgressBar
         android:id="@+id/progress_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"
-        app:layout_constraintTop_toBottomOf="@id/status_text"
+        app:layout_constraintTop_toBottomOf="@id/ug_link"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp" />
-
-    <Button
-        android:id="@+id/songsterr_link"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Songsterr"
-        android:textSize="16sp"
-        android:textColor="#FFFFFF"
-        android:background="@drawable/button_3d_songsterr"
-        android:visibility="gone"
-        app:layout_constraintTop_toBottomOf="@id/progress_bar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
-
-    <Button
-        android:id="@+id/ug_link"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Ultimate Guitar"
-        android:textSize="16sp"
-        android:textColor="#FFFFFF"
-        android:background="@drawable/button_3d_ug"
-        android:visibility="gone"
-        app:layout_constraintTop_toBottomOf="@id/songsterr_link"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
